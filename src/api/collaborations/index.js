@@ -6,7 +6,9 @@ module.exports = {
   version: '1.0.0',
   register: (
     server,
-    { collaborationsService, playlistsService, usersService, validator },
+    {
+      collaborationsService, playlistsService, usersService, validator,
+    },
   ) => {
     const collaborationsHandler = new CollaborationsHandler(
       collaborationsService,
